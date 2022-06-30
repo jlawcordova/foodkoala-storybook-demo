@@ -25,7 +25,7 @@ export default function Restaurant() {
           Restaurants
         </h1>
 
-        <div className={styles.grid}>
+        <div>
           {/* <Link href="/restaurant">
             <a className={styles.card}>
               <h2>Restaurants &rarr;</h2>
