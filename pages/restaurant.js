@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Link from 'next/link';
+import styles from '../styles/Home.module.css'
+import RestaurantCard from '../components/restaurant-card';
 
-export default function Home() {
+export default function Restaurant() {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,26 +14,35 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-         <img className={styles.logo} src="/koala.png"></img>foodkoala
-        </h1>
+        <Link href="/">
+            <a>
+                <h1 className={styles.title}>
+                <img className={styles.logo} src="/koala.png"></img>foodkoala
+                </h1>
+            </a>
+        </Link>
         <h1 className="title">
-          We deliver slow but we give it good!
+          Restaurants
         </h1>
 
         <div className={styles.grid}>
-          <Link href="/restaurant">
+          {/* <Link href="/restaurant">
             <a className={styles.card}>
               <h2>Restaurants &rarr;</h2>
               <p>Find the best restaurants in Davao.</p>
             </a>
-          </Link>
-          
+          </Link> */}
+          <RestaurantCard
+            name="The Fat Cow"
+            image="https://i0.wp.com/stage.thefatcowgroup.com/wp-content/uploads/2021/09/6-1.png?w=800&ssl=1"
+            description="8-hour Spaghetti Bolognese, Black Truffle Pasta, Callos in Chorizo and Garlic">
+          </RestaurantCard>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Shops &rarr;</h2>
-            <p>Shop online and have them delivered at your doorstep.</p>
-          </a>
+          <RestaurantCard
+            name="Rekado Davao"
+            image="https://farm5.staticflickr.com/4388/35678253654_99bcf5a032.jpg"
+            description="For the Kadayawan menu, we are bringing in the classic Filipino dishes">
+          </RestaurantCard>
         </div>
       </main>
 

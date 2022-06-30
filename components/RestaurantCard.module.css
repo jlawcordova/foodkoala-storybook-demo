@@ -1,0 +1,38 @@
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: rgb(112, 112, 112);
+  background-color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+  height: 440px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  background-color: #c60d5c;
+  color: white;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.card img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
