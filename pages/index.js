@@ -17,7 +17,7 @@ export default function Home() {
          <img className={styles.logo} src="/koala.png"></img>foodkoala
         </h1>
         <h1 className="title">
-          We deliver slow but we give it good!
+          We deliver slowly but at least we're cute!
         </h1>
 
         <div className={styles.grid}>
