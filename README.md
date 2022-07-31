@@ -26,4 +26,6 @@ With the foodkoala project running, run Storybook:
 npm run storybook
 ```
 
+Open [http://localhost:6006](http://localhost:6006) with your browser to see the foodkoala storybook.
+
 ![foodkoala storybook](/docs/assets/foodkoala_storybook.png)
