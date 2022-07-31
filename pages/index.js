@@ -1,7 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/home.module.css'
 import Link from 'next/link';
+
+import NavigationBar from '../components/navigation-bar/navigation-bar';
+import Footer from '../components/footer/footer';
 
 export default function Home() {
   return (
@@ -12,10 +14,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <NavigationBar></NavigationBar>
+
       <main className={styles.main}>
-        <h1 className={styles.title}>
-         <img className={styles.logo} src="/koala.png"></img>foodkoala
-        </h1>
         <h1 className="title">
           We deliver slowly but at least we're cute!
         </h1>
@@ -29,25 +30,14 @@ export default function Home() {
           </Link>
           
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <a href="#" className={styles.card}>
             <h2>Shops &rarr;</h2>
             <p>Shop online and have them delivered at your doorstep.</p>
           </a>
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <Footer></Footer>
     </div>
   )
 }

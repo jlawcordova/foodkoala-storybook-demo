@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link';
-import styles from '../styles/Home.module.css'
-import RestaurantCard from '../components/restaurant-card';
+import styles from '../styles/home.module.css'
+import RestaurantCard from '../components/restaurant/restaurant-card/restaurant-card';
+
+import NavigationBar from '../components/navigation-bar/navigation-bar';
+import Footer from '../components/footer/footer';
 
 export default function Restaurant() {
   return (
@@ -13,25 +14,14 @@ export default function Restaurant() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <Link href="/">
-            <a>
-                <h1 className={styles.title}>
-                <img className={styles.logo} src="/koala.png"></img>foodkoala
-                </h1>
-            </a>
-        </Link>
+      <NavigationBar></NavigationBar>
+
+      <main className={styles.mainContent}>
         <h1 className="title">
           Restaurants
         </h1>
 
         <div>
-          {/* <Link href="/restaurant">
-            <a className={styles.card}>
-              <h2>Restaurants &rarr;</h2>
-              <p>Find the best restaurants in Davao.</p>
-            </a>
-          </Link> */}
           <RestaurantCard
             name="The Fat Cow"
             image="https://i0.wp.com/stage.thefatcowgroup.com/wp-content/uploads/2021/09/6-1.png?w=800&ssl=1"
@@ -46,18 +36,7 @@ export default function Restaurant() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <Footer></Footer>
     </div>
   )
 }

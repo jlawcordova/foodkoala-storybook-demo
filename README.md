@@ -15,7 +15,9 @@ Next, run the development server:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the foodkoala app.
+
+![foodkoala home page](/docs/assets/foodkoala_home.png)
 
 ## Run Storybook
 With the foodkoala project running, run Storybook:
@@ -23,3 +25,5 @@ With the foodkoala project running, run Storybook:
 ```bash
 npm run storybook
 ```
+
+![foodkoala storybook](/docs/assets/foodkoala_storybook.png)

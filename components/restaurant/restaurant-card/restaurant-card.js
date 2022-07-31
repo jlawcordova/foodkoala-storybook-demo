@@ -1,4 +1,4 @@
-import styles from '../components/RestaurantCard.module.css'
+import styles from './restaurant-card.module.css'
 import Link from 'next/link';
 
 export default function RestaurantCard(props) {
